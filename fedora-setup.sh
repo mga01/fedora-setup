@@ -24,7 +24,8 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video &&
 
 # installing preferred software for better experience
-sudo dnf install vim vlc neofetch htop clamav clamtk okular p7zip p7zip-plugins chromium flatpak pcmanfm &&
+sudo dnf install vim vlc neofetch htop clamav clamtk okular p7zip p7zip-plugins chromium flatpak pcmanfm curl cabextract xorg-x11-font-utils fontconfig &&
+sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 # install flatpaks
 flatpak install com.brave.Browser org.libreoffice.LibreOffice &&
